@@ -1,4 +1,5 @@
 .game {
+  padding: 50px;
   margin: 0 auto;
   max-width: 500px;
   height: 700px;
@@ -39,18 +40,15 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
   
-  body {
-    padding: 0;
-  }
-
-  .game {
+ .game {
     width: auto;
     margin: 0;
+    padding: 0;
 
     .control-panel {
       border-radius: 0;
     }
-    
+
     .game-board {
       border-radius: 0;
     }
