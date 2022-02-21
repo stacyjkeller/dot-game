@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$font-color: #664229;
+$page-bg: #a0e3db;
+$controlpanel-bg: #f4f3ea;
+$gameboard-bg: #6dc9dd;
+$bagel-bg: #D2B48C;
+$btn-bg: #c2df55;
+$btn-bg-alt: #ff6347;
+$btn-font-color: #212F3C;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin transition {
+  transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.05rem;
+  color: $font-color;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  padding: 50px;
+  background-color: #a0e3db;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}

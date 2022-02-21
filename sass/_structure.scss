@@ -1,0 +1,58 @@
+.game {
+  margin: 0 auto;
+  max-width: 500px;
+  height: 700px;
+  position: relative;
+
+  .control-panel {
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f3ea;
+    z-index: 20;
+    position: relative;
+    padding: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+
+.game-board {
+  border-radius:  0 0 20px 20px;
+  height: 600px;
+  position: relative;
+  top: -100px;
+  overflow: hidden;
+  background-color: $gameboard-bg;
+}
+
+// This looks good on iPhone SE. Needs more work to look good on other mobile devices.
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  body {
+    padding: 0;
+  }
+
+  .game {
+    width: auto;
+    margin: 0;
+
+    .control-panel {
+      border-radius: 0;
+    }
+    
+    .game-board {
+      border-radius: 0;
+    }
+  }
+}

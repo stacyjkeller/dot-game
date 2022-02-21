@@ -1,0 +1,37 @@
+.dot {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  z-index: 10;
+  background-color: $bagel-bg;
+  background-image: url(/images/bagel.svg);
+  border-radius: 50%;
+  animation: fallingDots;
+  animation-play-state: paused;
+  opacity: 1;
+  @include transition;
+
+  &.clicked {
+    opacity: 0;
+    transform: scale(1.5);
+    @include transition;
+  }
+
+  &.falling {
+    animation-play-state: running;
+  }
+}
+
+@keyframes fallingDots {
+  0% {
+    top: 0;
+  }
+
+  99% {
+    top: 1000px;
+  }
+
+  100% {
+    display: none;
+  }
+}

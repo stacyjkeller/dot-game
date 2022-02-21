@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poppa Bagel - Stacy's Dot Game</title>
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+  </head>
+  <body>
+    <main class="game">
+      <section class="control-panel">
+        <div class="row">
+          <div class="score" id="score-box">0</div>
+          <button type="button" class="button" id="toggle-button">Play</button>
+        </div>
+        <div class="row">
+          <div class="speed-slider">
+            <label for="dot-speed" class="visuall-hidden">Dot speed</label>
+            <input type="range" id="speed-control" value="10" min="10" max="100" />
+          </div>
+        </div>
+        <div class="row">
+          <p id="speed-output"></p>
+        </div>
+      </section>
+      <section class="game-board" id="board">
+      </section>
+    </main>
+	  <script src="js/index.js"></script>
+  </body>
+</html>
