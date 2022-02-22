@@ -21,7 +21,7 @@ const init = () => {
   setScore(startScore);
   setSpeed();
   toggleButton.addEventListener('click', toggleGame);
-  speedControl.addEventListener('change', setSpeed);
+  speedControl.addEventListener('input', setSpeed);
 }
 
 window.onload = function() {
